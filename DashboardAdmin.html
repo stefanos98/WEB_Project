@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- ########### Table Style ########### -->
+  <style>
+    table#t01 tr:nth-child(even){
+      background-color: antiquewhite;
+    }
+    table#t01 tr:nth-child(odd){
+      background-color: beige;
+    }
+    table#t01 th {
+      background-color: burlywood;
+      text-align: center;
+    }
+    table#t01 th,td{
+      text-align: center;
+    }
+    table#t01 td{
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body style="height:1500px">
+
+<!-- ########### Navigation Bar ########### -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Main Page</a><ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Map</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Dashboard</a>
+    </li>
+    <li>
+        <a class="nav-link" href="#">Data</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid" style="margin-top:80px"></div>
+
+<div class="container"></div>
+<h2>Dashboard</h2>
+<p>Here, you can see all the information about the users.</p>
+
+<!-- ########### Table ########### -->
+<div class="table-responsive-sm">
+  <table id="t01" class="table table-bordered">
+    <thread>
+      <!-- Headers -->
+      <tr>
+        <th>User</th>
+        <th>Entries/Activity</th>
+        <th>Entries/User</th>
+        <th>Entries/Month</th>
+        <th>Entries/Day</th>
+        <th>Entries/Hour</th>
+        <th>Entries/Year</th>
+      </tr>
+    </thread>
+  </table>
+  <tbody>
+    <!-- Lines -->
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</div>
