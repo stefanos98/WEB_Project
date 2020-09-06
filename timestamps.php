@@ -20,7 +20,7 @@ function getmonthstamps (int $month){
     return[$first_stamp, $last_stamp];
 }
 
-function getyearsamps (int $year){
+function getyearstamps (int $year){
     $query_date = "$year-m-d";
     $first = date ("Y-01-01 00:00:00", strtotime($query_date));
     $last = date ("Y-12-31 23:59:59", strtotime($query_date));
